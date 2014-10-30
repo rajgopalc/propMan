@@ -1,0 +1,12 @@
+.editor-on {
+    height: 150px;
+    overflow-y: auto;
+}
+
+.editor-off {
+    height: 100%;
+    overflow-y : hidden;
+}
+.label{
+    font-weight: bold;
+}
