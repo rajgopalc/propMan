@@ -4,13 +4,13 @@
  */
 
 var express = require('express'),
-  bodyParser = require('body-parser'),
-  methodOverride = require('method-override'),
-  errorHandler = require('error-handler'),
-  morgan = require('morgan'),
-  routes = require('./routes'),
-  http = require('http'),
-  path = require('path');
+bodyParser = require('body-parser'),
+methodOverride = require('method-override'),
+errorHandler = require('error-handler'),
+morgan = require('morgan'),
+routes = require('./routes'),
+http = require('http'),
+path = require('path');
 
 var app = module.exports = express();
 
@@ -42,7 +42,7 @@ app.get('/', routes.showPropertyFile);
 
 
 // redirect all others to the index (HTML5 history)
-app.get('*', routes.index);
+app.get('*', routes.showPropertyFile);
 
 
 /**
